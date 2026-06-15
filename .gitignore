@@ -1,0 +1,11 @@
+/vendor/
+/.phpunit.result.cache
+/.phpunit.cache
+/.pint.cache
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example

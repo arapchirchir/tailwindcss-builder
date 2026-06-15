@@ -1,0 +1,59 @@
+{
+    "name": "tecworld/tailwind-builder",
+    "description": "A developer-first Tailwind CSS page builder package for Laravel.",
+    "keywords": [
+        "laravel",
+        "tailwindcss",
+        "page-builder",
+        "website-builder",
+        "cms",
+        "builder"
+    ],
+    "homepage": "https://techworld.co.ke",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tecworld Innovations LTD",
+            "email": "info@techworld.co.ke"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/filesystem": "^11.0|^12.0",
+        "illuminate/view": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^10.5|^11.0",
+        "laravel/pint": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tecworld\\TailwindBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tecworld\\TailwindBuilder\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tecworld\\TailwindBuilder\\TailwindBuilderServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
